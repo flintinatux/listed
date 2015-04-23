@@ -1,0 +1,10 @@
+- function rev(path) { return (locals[path] || path).substring(6); }
+
+doctype html
+html
+  head
+    meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+    script(src=rev('public/app.js') type='text/javascript' defer)
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css')
+    link(href=rev('public/app.css') media='screen' rel='stylesheet')
+  body
